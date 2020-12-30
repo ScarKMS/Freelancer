@@ -1,6 +1,8 @@
 /** Variables **/
 
 :root {
+    --primario: #ffc107;
+    --secundario: #0097a7;
     --oscuro: #212121;
 }
 
@@ -31,12 +33,53 @@ body {
 
 /** Globales **/
 
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
 
 /** Utilidades **/
 
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+/** Botones **/
+
+.boton {
+    display: block;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+    background-color: var(--secundario);
+    transition: background-color .3s ease-in-out;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton:hover {
+    background-color: #fad0c4;
+    color: #000000;
 }
 
 
@@ -84,4 +127,37 @@ body {
 }
 
 
-/** **/
+/** Hero **/
+
+.hero {
+    height: 45rem;
+    background-image: url(../img/hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero .contenedor {
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.contenedor i {
+    font-size: 5rem;
+    color: var(--primario);
+}

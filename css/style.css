@@ -40,10 +40,16 @@ h3 {
     margin: 0;
 }
 
+p {
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
 
 /** Utilidades **/
 
 .contenedor {
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -184,7 +190,40 @@ main {
 }
 
 .servicios h3 {
-    color: var(--secundario);
+    color: #9e0b54;
     font-weight: 400;
     font-size: 3rem;
+}
+
+.servicio {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor-servicios {
+        display: flex;
+        justify-content: space-between;
+    }
+    .servicio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .servicio p {
+        text-align: left;
+    }
+}
+
+.iconos {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    background-color: #fad0c4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    color: #212121;
 }

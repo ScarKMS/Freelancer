@@ -28,6 +28,7 @@ body {
     font-family: 'Krub', sans-serif;
     font-size: 1.8rem;
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    background-attachment: fixed;
 }
 
 
@@ -49,6 +50,10 @@ h3 {
 
 .no-margin {
     margin: 0;
+}
+
+.centrar-texto {
+    text-align: center;
 }
 
 
@@ -157,7 +162,29 @@ h3 {
     text-align: center;
 }
 
-.contenedor i {
+.hero .contenedor i {
     font-size: 5rem;
     color: var(--primario);
+}
+
+
+/** Contenido Principal **/
+
+main {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.servicios {
+    margin: 3rem auto;
+    box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.46);
+}
+
+.servicios h3 {
+    color: var(--secundario);
+    font-weight: 400;
+    font-size: 3rem;
 }

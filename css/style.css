@@ -1,0 +1,87 @@
+/** Variables **/
+
+:root {
+    --oscuro: #212121;
+}
+
+html {
+    /** Codigo para que el padding no sea tomado en cuenta en las medidas globales **/
+    box-sizing: border-box;
+    /** Reset para REMS - 62.5% = 10px **/
+    font-size: 62.5%;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+    font-size: 1.8rem;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+
+/** Globales **/
+
+
+/** Utilidades **/
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/** Header **/
+
+.site-header {
+    background-color: #ffffff;
+}
+
+.site-header nav {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .site-header nav {
+        padding: 1rem 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.site-header nav a {
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.site-header nav a:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .site-header nav a {
+        margin-bottom: 0;
+    }
+}
+
+.site-header nav a:hover {
+    color: #9e0b54;
+}
+
+
+/** **/
